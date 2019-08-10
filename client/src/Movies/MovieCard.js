@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Movie from './Movie.js';
 
 const MovieCard = props => {
-  return;
+  return (
+    
+
+  )
 };
 
 export default MovieCard;
