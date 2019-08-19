@@ -13,7 +13,8 @@ const MovieList = props => {
         })
         .catch(error => {
           console.error('Server Error', error);
-        });
+        }
+      );
     }
     
     getMovies();
@@ -33,7 +34,7 @@ function MovieDetails({ movie }) {
     // console.log('MovieList: MovieDetails: ', movie)
   return (
     <div className="movie-card">
-      <h2><Link to={`/movies/${movie.id}`}>{title}</Link></h2>
+      <Link to={`/movies/${movie.id}`}><h2>{title}</h2></Link>
       <div className="movie-director">
         Director: <em>{director}</em>
       </div>
